@@ -2,6 +2,9 @@
 #include<stdlib.h>
 #include<setjmp.h>
 
+/* stripComments relies on nested functions and tail call
+   optimization.  gcc supports both features. */
+
 int stripComments (void) {
   jmp_buf buf;
   void start(void){
