@@ -63,7 +63,7 @@ int stripComments (void) {
     case '/': return single_slash();
     case '\'': case '"': putchar(c); return quote(c);
     default: putchar(c); return start();}}
-  
+
   if (!setjmp(buf)) {
     start();
     // If start() returns for whatever reason, we failed:
