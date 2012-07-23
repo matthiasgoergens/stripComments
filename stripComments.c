@@ -72,5 +72,5 @@ int stripComments (void) {
 
 int main () {
   if (stripComments())
-    exit (EXIT_SUCCESS);
+    exit(EXIT_SUCCESS);
   else exit(EXIT_FAILURE);}
