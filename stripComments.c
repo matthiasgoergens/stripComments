@@ -44,7 +44,7 @@ int stripComments (void) {
        void quote(const int q) {
        int c = getchar_();
        putchar(c);
-       switch (c){
+       switch (c) {
        case q: case '\n': return start();
        case '\\': putchar(getchar_()); // fall-through
        default: return quote(q);}}
@@ -54,7 +54,7 @@ int stripComments (void) {
       int c = getchar_();
       putchar(c);
       if ((c==q) || (c=='\n')) return start();
-      switch (c){
+      switch (c) {
       case '\\': putchar(getchar_()); // fall-through
       default: return quote(q);}}
 
